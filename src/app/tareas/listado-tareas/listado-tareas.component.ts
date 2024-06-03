@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './listado-tareas.component.css'
 })
 export class ListadoTareasComponent {
-
+  tareas: Array<string>= [
+'Barrer','Trapear','Cocinar','Sacar la basura','Planchar', 'Bailar', 'Comer'
+  ];
 }
