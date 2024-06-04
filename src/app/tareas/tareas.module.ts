@@ -4,17 +4,9 @@ import { SubtituloComponent } from './subtitulo/subtitulo.component';
 import { ListadoTareasComponent } from './listado-tareas/listado-tareas.component';
 import { GridComponent } from './grid/grid.component';
 
-
-
 @NgModule({
-  declarations: [
-    SubtituloComponent,
-    ListadoTareasComponent,
-    GridComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [SubtituloComponent, ListadoTareasComponent],
+  declarations: [SubtituloComponent, ListadoTareasComponent, GridComponent],
+  imports: [CommonModule],
+  exports: [GridComponent],
 })
-export class TareasModule { }
+export class TareasModule {}
