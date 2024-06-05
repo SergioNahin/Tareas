@@ -12,4 +12,7 @@ export class ListadoTareasComponent {
   get tareas(){
     return this.tareasService.tareas;
   }
+  delete(){
+    this.tareasService.deleteTarea();
+  }
 }

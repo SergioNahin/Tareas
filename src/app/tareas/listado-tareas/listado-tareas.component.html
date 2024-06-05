@@ -12,7 +12,7 @@
     <tr *ngFor="let tarea of tareas; index as i">
       <th>{{i+1}}</th>
       <td>
-        <b>{{tarea}}</b>
+        <b>{{tarea.act}}</b>
       </td>
 
       <td>
@@ -20,7 +20,7 @@
       </td>
 
       <td>
-        <button class="button is-danger is-rounded">Eliminar</button>
+        <button class="button is-danger is-rounded" (click)="delete()">Eliminar</button>
       </td>
     </tr>
   </tbody>
